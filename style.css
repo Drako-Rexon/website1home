@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --color: blue;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navBar{
+    font-family: 'Merienda', cursive;
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+#logo{
+    margin: 11px 11px;
+}
+#logo img{
+    width: 110px;
+    height: 110px;
+}
+ul{
+    display: flex;
+    
+}
+#navBar ul li{
+    list-style: none;
+    font-size: 1.4em;
+    margin: 20px 0px 0px 0px;
+}
+#navBar ul li a{
+    margin: 10px 30px;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+#navBar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navBar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 703px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 166px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.89;
+    background-image: url('stream.jpg');
+    background-repeat: no-repeat;
+    background-position: cover;
+    z-index: -1;
+}
+#services{
+    margin: 40px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    font-family: 'Merienda', cursive;
+    border-radius: 28px;
+    /* display: flex; */
+    padding: 30px;
+    text-align: justify;
+    margin: 4px 8px;
+}
+#services .box h2{
+    font-family: 'Bree Serif', serif;
+}
+
+#services .box img{
+    height: 120px;
+    display: block;
+    margin: 20px auto;
+}
+
+#client-section{
+    /* height: 400px; */
+    position: relative;
+}
+
+#clients{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#clients img{
+    height:150px;
+}
+.client-item{
+    padding: 45px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    height: 335px;
+    width: 100%;
+    background-image: url('https://wallpaperaccess.com/full/138733.jpg');
+    z-index: -1;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://wallpaperaccess.com/full/427852.jpg');
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+}
+footer{
+    background:black ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding:0.8rem;
+    border-radius: 10px;
+    border: 0px;
+    background: none;
+    outline: none;
+    font-size: 1.4em;
+}
+#phone{
+    text-decoration: none;
+}
+#contact{
+    margin:0px;
+}
+#contact-box input:focus, #contact-box textarea:focus{
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 30px ;
+    font-family: 'Bree Serif', serif;
+}
+.box{
+    background-color: blanchedalmond;
+}
+
+
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 3.8em;
+    padding: 15px;
+}
+.h-secondary{
+    font-size: 3em;
+    padding: 15px;
+}
+#home h1{
+    text-align: center;
+    color: white;
+}
+.btn{
+    padding: 8px 30px;
+    border: 2px solid white;
+    margin: 20px;
+    background-color: rgb(0, 128, 128, .15);
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.white{
+    color: white;
+}
